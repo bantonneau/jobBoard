@@ -16,6 +16,9 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 
 // TODO: Add a comment describing the functionality of this object
+
+// This is everything that is going to be stored in a session
+
 const sess = {
   secret: 'Super secret secret',
   cookie: {},
@@ -26,7 +29,9 @@ const sess = {
   })
 };
 
-// TODO: Add a comment describing the functionality of this statement
+
+// This is initializing the middleware
+
 app.use(session(sess));
 
 app.engine('handlebars', hbs.engine);
