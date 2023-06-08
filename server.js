@@ -1,48 +1,25 @@
-const path = require('path');
-const express = require('express');
-const session = require('express-session');
-const exphbs = require('express-handlebars');
-const routes = require('./controllers');
-const helpers = require('./utils/helpers');
-
-const sequelize = require('./config/connection');
-
-// TODO: Add a comment describing the functionality of this expression
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const express = require("express");
+const exphbs = require("express-handlebars");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
 
-const hbs = exphbs.create({ helpers });
+const PORT = process.env.PORT || 8080;
 
-// TODO: Add a comment describing the functionality of this object
+//data
+const jobListings = require("./models/jobs.json")
 
-// This is everything that is going to be stored in a session
+app.use(express.static("public"));
 
-const sess = {
-  secret: 'Super secret secret',
-  cookie: {},
-  resave: false,
-  saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize
-  })
-};
-
-
-// This is initializing the middleware
-
-app.use(session(sess));
-
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
-
+//body parser for POsts
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(routes);
+const hbs = exphbs.create();
 
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
-});
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
+
+
+app.listen(PORT, function () {
+    console.log("Server listening on: http://localhost:" + PORT);
+})
