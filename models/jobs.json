@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "title": "Junior Full Stack Developer",
+        "company": "Microsoft",
+        "experience": "beginner",
+        "salary": "$60,000-$70,0000",
+        "remote": true,
+        "description": "We are seeking a motivated and talented Junior Full Stack Developer to join our dynamic team. As a Junior Full Stack Developer, you will play a vital role in the development and maintenance of our web applications and software solutions. You will have the opportunity to work on both the front-end and back-end components of our projects, gaining valuable hands-on experience and contributing to the success of our company.",
+        "responsibilities": "Collaborate with the development team to design, develop, and maintain web applications using modern technologies and best practices.<br>Participate in the entire software development lifecycle, including requirements gathering, coding, testing, and deployment.<br>Build responsive and intuitive user interfaces using HTML, CSS, and JavaScript frameworks.<br>Develop server-side applications and APIs using languages such as Python, Java, or Node.js.<br>Integrate data from various sources and databases, ensuring data consistency and integrity.<br>Debug and fix software defects to ensure high-quality, bug-free applications.<br>Collaborate with cross-functional teams, including designers and project managers, to deliver innovative and efficient solutions.<br>Stay up-to-date with emerging technologies and industry trends, continuously improving your skills and knowledge.",
+        "requirements": "Bachelor's degree in Computer Science, Software Engineering, or a related field (or equivalent practical experience).<br>Solid understanding of web development principles, including front-end and back-end technologies.<br>Proficiency in at least one front-end framework (e.g., React, Angular, or Vue.js) and familiarity with HTML, CSS, and JavaScript.<br>Experience with server-side programming languages (e.g., Python, Java, or Node.js) and related frameworks.<br>Familiarity with relational databases and SQL.<br>Basic knowledge of version control systems (e.g., Git) and agile development methodologies.<br>Strong problem-solving and analytical skills, with a keen attention to detail.<br>Good communication and teamwork abilities, with a willingness to learn and adapt in a fast-paced environment."
+    }
+]
