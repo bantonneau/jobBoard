@@ -1,8 +1,12 @@
-app.get("/", function(req,res){
+const router = require("express").Router()
+
+router.get("/", function(req,res){
     return res.render("dashboard")
 })
 
 
-app.get("/jobs/:id", function(req,res){
-    return
+router.get("/jobs/:id", function(req,res){
+    return res.render("job");
 })
+
+module.exports = router;

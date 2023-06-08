@@ -1,12 +1,13 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
-
+const path = require("path");
 const app = express();
+const route = require("./controllers/job-routes")
 
 const PORT = process.env.PORT || 8080;
 
 //data
-const jobListings = require("./models/jobs.json")
+const jobListings = require("./models/jobs.json");
 
 app.use(express.static("public"));
 
@@ -18,6 +19,9 @@ const hbs = exphbs.create();
 
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
+
+app.use(express.static(path.join(__dirname, "public")));
+app.use(route);
 
 
 app.listen(PORT, function () {
