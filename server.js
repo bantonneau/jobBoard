@@ -6,9 +6,6 @@ const route = require("./controllers/job-routes")
 
 const PORT = process.env.PORT || 8080;
 
-//data
-const jobListings = require("./models/jobs.json");
-
 app.use(express.static("public"));
 
 //body parser for POsts
