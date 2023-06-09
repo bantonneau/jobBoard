@@ -14,7 +14,7 @@ router.get("/jobs/:id", function (req, res) {
         // Handle the case where the job with the given id is not found
         return res.status(404).send("Job not found");
     }
-
+    console.log(job)
     return res.render("job", { job });
 });
 
