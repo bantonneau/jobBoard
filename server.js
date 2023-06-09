@@ -3,12 +3,26 @@ const exphbs = require("express-handlebars");
 const path = require("path");
 const app = express();
 const route = require("./controllers/job-routes")
+const session = ('express-session');
 
 const PORT = process.env.PORT || 8080;
 
+app.use(
+    session({
+      secret: 'session1',
+      resave: false,
+      saveUninitialized: false,
+      cookie: {
+        secure: true, 
+        httpOnly: true,
+        maxAge: 3600000, // session expriration is 1 hour
+      },
+    })
+  );
+  
+
 app.use(express.static("public"));
 
-//body parser for Posts
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
