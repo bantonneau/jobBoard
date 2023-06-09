@@ -3,7 +3,7 @@ const exphbs = require("express-handlebars");
 const path = require("path");
 const app = express();
 const route = require("./controllers/job-routes")
-const session = ('express-session');
+const session = require('express-session');
 
 const PORT = process.env.PORT || 8080;
 
