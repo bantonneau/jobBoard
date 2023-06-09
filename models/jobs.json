@@ -11,5 +11,60 @@
         "description": "We are seeking a motivated and talented Junior Full Stack Developer to join our dynamic team. As a Junior Full Stack Developer, you will play a vital role in the development and maintenance of our web applications and software solutions. You will have the opportunity to work on both the front-end and back-end components of our projects, gaining valuable hands-on experience and contributing to the success of our company.",
         "responsibilities": "Collaborate with the development team to design, develop, and maintain web applications using modern technologies and best practices.<br>Participate in the entire software development lifecycle, including requirements gathering, coding, testing, and deployment.<br>Build responsive and intuitive user interfaces using HTML, CSS, and JavaScript frameworks.<br>Develop server-side applications and APIs using languages such as Python, Java, or Node.js.<br>Integrate data from various sources and databases, ensuring data consistency and integrity.<br>Debug and fix software defects to ensure high-quality, bug-free applications.<br>Collaborate with cross-functional teams, including designers and project managers, to deliver innovative and efficient solutions.<br>Stay up-to-date with emerging technologies and industry trends, continuously improving your skills and knowledge.",
         "requirements": "Bachelor's degree in Computer Science, Software Engineering, or a related field (or equivalent practical experience).<br>Solid understanding of web development principles, including front-end and back-end technologies.<br>Proficiency in at least one front-end framework (e.g., React, Angular, or Vue.js) and familiarity with HTML, CSS, and JavaScript.<br>Experience with server-side programming languages (e.g., Python, Java, or Node.js) and related frameworks.<br>Familiarity with relational databases and SQL.<br>Basic knowledge of version control systems (e.g., Git) and agile development methodologies.<br>Strong problem-solving and analytical skills, with a keen attention to detail.<br>Good communication and teamwork abilities, with a willingness to learn and adapt in a fast-paced environment."
-    }
+    }, 
+
+    {
+        "id": 2,
+        "title": "Senior Data Scientist",
+        "company": "Google",
+        "experience": "Experienced",
+        "salary": "$120,000-$150,000",
+        "remote": false,
+        "hybrid": true,
+        "onSite": true,
+        "description": "We are looking for a skilled and experienced Senior Data Scientist to join our team at Google. As a Senior Data Scientist, you will be responsible for developing and implementing advanced data analysis models and algorithms to extract valuable insights from large datasets. You will collaborate with cross-functional teams to solve complex business problems and drive data-driven decision-making.",
+        "responsibilities": "Develop and implement advanced data analysis models and algorithms to extract insights from complex datasets.<br>Apply statistical techniques and machine learning algorithms to solve business problems and optimize processes.<br>Collaborate with cross-functional teams to understand business requirements and design analytical solutions.<br>Clean, transform, and analyze large datasets to uncover patterns, trends, and correlations.<br>Visualize and communicate findings to stakeholders using data visualization tools and techniques.<br>Provide guidance and mentorship to junior data scientists and analysts.<br>Stay up-to-date with the latest advancements in data science, machine learning, and artificial intelligence.",
+        "requirements": "Master's or Ph.D. degree in a quantitative field such as Computer Science, Statistics, or Mathematics.<br>Proven experience as a Data Scientist, with a strong track record of developing and implementing data-driven solutions.<br>In-depth knowledge of statistical analysis, machine learning algorithms, and data mining techniques.<br>Proficiency in programming languages such as Python or R, along with data manipulation and analysis libraries.<br>Experience with big data technologies and frameworks such as Hadoop, Spark, or TensorFlow.<br>Strong problem-solving and analytical skills, with the ability to work on complex business problems and deliver actionable insights.<br>Excellent communication and presentation skills, with the ability to explain complex concepts to both technical and non-technical stakeholders."
+      }, 
+
+      {
+        "id": 3,
+        "title": "Software Engineer",
+        "company": "Amazon",
+        "experience": "Intermediate",
+        "salary": "$90,000-$110,000",
+        "remote": true,
+        "hybrid": false,
+        "onSite": false,
+        "description": "Join our team at Amazon as a Software Engineer and contribute to building scalable and high-performance software solutions. As a Software Engineer, you will be involved in the full software development lifecycle, from designing and coding to testing and deployment. You will work with cutting-edge technologies and collaborate with cross-functional teams to deliver innovative solutions to complex problems.",
+        "responsibilities": "Design, develop, and maintain software applications using programming languages such as Java, C++, or Python.<br>Write clean and efficient code, conduct code reviews, and ensure code quality and performance.<br>Collaborate with product managers and stakeholders to understand requirements and translate them into technical solutions.<br>Participate in architectural design discussions and propose improvements and optimizations.<br>Perform testing and debugging of software components to ensure functionality and reliability.<br>Contribute to the continuous improvement of development processes and best practices.<br>Stay updated with the latest trends and technologies in software engineering.",
+        "requirements": "Bachelor's or Master's degree in Computer Science or a related field.<br>Solid understanding of software development principles, data structures, and algorithms.<br>Proficiency in at least one programming language such as Java, C++, or Python.<br>Experience with web development frameworks, databases, and version control systems.<br>Strong problem-solving skills and attention to detail.<br>Excellent communication and collaboration abilities, with a strong desire to learn and grow."
+      }, 
+      {
+        "id": 4,
+        "title": "UX Designer",
+        "company": "Apple",
+        "experience": "Experienced",
+        "salary": "$100,000-$130,000",
+        "remote": false,
+        "hybrid": true,
+        "onSite": true,
+        "description": "Apple is seeking a talented UX Designer to join our design team and create intuitive and visually appealing user experiences for our products. As a UX Designer, you will collaborate with cross-functional teams to understand user requirements and translate them into engaging and user-friendly designs. You will play a crucial role in shaping the overall user experience and ensuring a seamless interaction between users and our products.",
+        "responsibilities": "Conduct user research and gather insights to inform design decisions and improve usability.<br>Create wireframes, prototypes, and visual designs for digital interfaces using design tools and software.<br>Collaborate with product managers and engineers to define and implement user-centered design solutions.<br>Perform usability testing and iterate on designs based on user feedback.<br>Ensure consistency and adherence to design guidelines and brand standards.<br>Stay updated with the latest trends and best practices in UX design.",
+        "requirements": "Bachelor's or Master's degree in Design, Human-Computer Interaction, or a related field.<br>Proven experience as a UX Designer, with a strong portfolio showcasing user-centered design solutions.<br>Proficiency in design tools such as Sketch, Adobe XD, or Figma.<br>Strong understanding of user research methodologies and usability principles.<br>Excellent visual design skills and attention to detail.<br>Good communication and collaboration abilities, with the ability to present and justify design decisions to stakeholders."
+      }, 
+      {
+        "id": 5,
+        "title": "Marketing Manager",
+        "company": "Facebook",
+        "experience": "Experienced",
+        "salary": "$110,000-$140,000",
+        "remote": true,
+        "hybrid": false,
+        "onSite": false,
+        "description": "Facebook is looking for an experienced Marketing Manager to join our team and drive strategic marketing initiatives. As a Marketing Manager, you will develop and execute marketing campaigns, analyze market trends, and contribute to the growth and success of our products and services. You will collaborate with cross-functional teams to ensure effective messaging and positioning, and work towards achieving marketing objectives.",
+        "responsibilities": "Develop and implement marketing strategies and campaigns to promote Facebook products and services.<br>Analyze market trends, customer insights, and competitor activities to identify opportunities and inform marketing decisions.<br>Create compelling marketing content and collateral, including presentations, brochures, and digital assets.<br>Collaborate with product managers, designers, and sales teams to ensure consistent messaging and effective product positioning.<br>Monitor and measure the performance of marketing campaigns, providing insights and recommendations for optimization.<br>Stay updated with industry trends and emerging marketing technologies and techniques.",
+        "requirements": "Bachelor's or Master's degree in Marketing, Business Administration, or a related field.<br>Proven experience in marketing roles, with a focus on digital marketing and campaign management.<br>Strong understanding of marketing principles and techniques, including market research, segmentation, and positioning.<br>Excellent communication and presentation skills, with the ability to convey complex ideas and strategies.<br>Analytical mindset and proficiency in data analysis and reporting tools.<br>Ability to work effectively in cross-functional teams and manage multiple projects simultaneously."
+      }
+        
 ]
