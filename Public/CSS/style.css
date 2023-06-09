@@ -34,6 +34,21 @@ body {
     color: black;
   }
 
+  .profile-link {
+    background-color: white;
+    color: rgb(187, 147, 208);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .profile-link:hover {
+    background-color: rgb(187, 147, 208);
+    color: black;
+  }
+
   main {
     margin-top: 50px;
   }
