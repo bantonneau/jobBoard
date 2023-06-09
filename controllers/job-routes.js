@@ -3,6 +3,9 @@ const jobListings = require("../models/jobs.json");
 
 router.get("/", function (req, res) {
     return res.render("dashboard")
+    // return res.render("alljobs", {
+    //     jobsArray: jobListings
+    // })
 })
 
 
