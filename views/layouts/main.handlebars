@@ -13,8 +13,8 @@
   <header>
     <h1>Job Mode LLC</h1>
     <div class="header-buttons">
-      <button class="login-button">Login</button>
-      <a href="/profile" class="profile-link">My Profile</a>
+      {{#if userAuth}} <a href="/profile" class="profile-link">My Profile</a> <button class="login-button">Log Out</button> {{/if}}
+      {{#unless userAuth}} <button class="login-button">Login</button> {{/unless}}
     </div>
   </header>
   {{{body}}}
