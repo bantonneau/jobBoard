@@ -2,10 +2,9 @@ const router = require("express").Router()
 const jobListings = require("../models/jobs.json");
 
 router.get("/", function (req, res) {
-    return res.render("dashboard")
-    // return res.render("alljobs", {
-    //     jobsArray: jobListings
-    // })
+    return res.render("dashboard", {
+         jobsArray: jobListings
+    })
 })
 
 
@@ -19,4 +18,4 @@ router.get("/jobs/:id", function (req, res) {
     return res.render("job", { job });
 });
 
-module.exports = router;
+module.exports = router;    

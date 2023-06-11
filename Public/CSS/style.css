@@ -88,6 +88,21 @@ body {
     margin-bottom: 10px;
   }
 
+  .job-item a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .job-item a:visited {
+    text-decoration: none;
+    color: grey;
+  }
+
+  .job-item a:hover {
+    text-decoration: none;
+    color: purple;
+  }
+
   .job-item h3 {
     margin: 0;
     margin-bottom: 10px;
@@ -106,3 +121,4 @@ body {
     justify-content: center;
     color: white;
   }
+
