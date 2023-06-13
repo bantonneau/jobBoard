@@ -22,5 +22,13 @@ const User = sequelize.define('User', {
   },
 });
 
+User.findAll()
+  .then(users => {
+    console.log(users);
+  })
+  .catch(error => {
+    console.error('Error fetching users:', error);
+  });
+
 module.exports = User;
 
