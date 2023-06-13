@@ -1,16 +1,16 @@
 const router = require("express").Router()
-const jobListings = require("../models/jobs.json");
+const Job = require("../models/Job");
 
-router.get("/", function (req, res) {
+router.get("/", async function (req, res) {
+    const jobsArray = await Job.findAll();
     return res.render("dashboard", {
-         jobsArray: jobListings
+         jobsArray
     })
 })
 
-
-router.get("/jobs/:id", function (req, res) {
+router.get("/jobs/:id", async function (req, res) {
     const jobId = req.params.id; 
-    const job = jobListings.find(job => job.id == jobId);
+    const job = await Job.findByPk(jobId);
     if (!job) {
         return res.status(404).send("Job not found");
     }
@@ -18,4 +18,27 @@ router.get("/jobs/:id", function (req, res) {
     return res.render("job", { job });
 });
 
-module.exports = router;    
+module.exports = router;   
+
+
+// const router = require("express").Router()
+// const jobListings = require("../models/jobs.json");
+
+// router.get("/", function (req, res) {
+//     return res.render("dashboard", {
+//          jobsArray: jobListings
+//     })
+// })
+
+
+// router.get("/jobs/:id", function (req, res) {
+//     const jobId = req.params.id; 
+//     const job = jobListings.find(job => job.id == jobId);
+//     if (!job) {
+//         return res.status(404).send("Job not found");
+//     }
+//     console.log(job)
+//     return res.render("job", { job });
+// });
+
+// module.exports = router;    
