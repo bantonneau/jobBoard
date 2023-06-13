@@ -1,11 +1,30 @@
+const path = require("path");
 const express = require("express");
 const exphbs = require("express-handlebars");
-const path = require("path");
+
 const app = express();
-const route = require("./controllers/job-routes")
+const PORT = process.env.PORT || 8080;
+
+const sequelize = require('./config/connection');
+
+const hbs = exphbs.create();
+
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
+
+app.use(require('./controllers/'));
+
 const session = require('express-session');
 
-const PORT = process.env.PORT || 8080;
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log("Now Listening"));
+})
+
+//below code is not in Chris boilerplate
 
 app.use(
     session({
@@ -22,17 +41,6 @@ app.use(
   
 
 app.use(express.static("public"));
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-const hbs = exphbs.create();
-
-app.engine("handlebars", hbs.engine);
-app.set("view engine", "handlebars");
-
-app.use(express.static(path.join(__dirname, "public")));
-app.use(route);
 
 
 app.listen(PORT, function () {
