@@ -1,12 +1,11 @@
-// models/User.js
 const { DataTypes } = require('sequelize');
+const bcrypt = require('bcrypt');
 const { Sequelize } = require('sequelize');
-const sequelize = new Sequelize('database_name', 'username', 'password', {
+
+const sequelize = new Sequelize('Job_Listing', 'username', 'password', {
   host: 'localhost',
-  dialect: 'mysql', 
+  dialect: 'mysql',
 });
-
-
 
 const User = sequelize.define('User', {
   username: {
@@ -16,6 +15,10 @@ const User = sequelize.define('User', {
   password: {
     type: DataTypes.STRING,
     allowNull: false,
+    set(value) {
+      const hashedPassword = bcrypt.hashSync(value, 8);
+      this.setDataValue('password', hashedPassword);
+    },
   },
 });
 
