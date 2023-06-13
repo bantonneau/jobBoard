@@ -9,13 +9,13 @@ const PORT = process.env.PORT || 8080;
 
 app.use(
     session({
-      secret: 'session1',
+      secret: 'SECRET',
       resave: false,
       saveUninitialized: false,
       cookie: {
-        secure: true, 
+        resave: false, 
         httpOnly: true,
-        maxAge: 3600000, // session expriration is 1 hour
+        maxAge: 3600000, 
       },
     })
   );

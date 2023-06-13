@@ -1,6 +1,12 @@
 // models/User.js
 const { DataTypes } = require('sequelize');
-const sequelize = require();
+const { Sequelize } = require('sequelize');
+const sequelize = new Sequelize('database_name', 'username', 'password', {
+  host: 'localhost',
+  dialect: 'mysql', 
+});
+
+
 
 const User = sequelize.define('User', {
   username: {
