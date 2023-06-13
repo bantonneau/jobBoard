@@ -1,10 +1,10 @@
 const { DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
-const { Sequelize } = require('sequelize');
-
-const sequelize = new Sequelize('database_name', 'username', 'password', {
-  host: 'localhost',
-  dialect: 'mysql',
+const sequelize = require('./config/connection.js');
+const { name, username, password, host, dialect } = config.database;
+const sequelize = new Sequelize(name, username, password, {
+  host: host,
+  dialect: dialect,
 });
 
 const User = sequelize.define('User', {
@@ -23,3 +23,4 @@ const User = sequelize.define('User', {
 });
 
 module.exports = User;
+
