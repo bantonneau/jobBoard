@@ -1,13 +1,19 @@
 const path = require("path");
 const express = require("express");
 const exphbs = require("express-handlebars");
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
+const Handlebars = require("handlebars");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 const sequelize = require('./config/connection');
 
-const hbs = exphbs.create();
+const hbs = exphbs.create({ 
+  defaultLayout: 'main', 
+  handlebars: allowInsecurePrototypeAccess(Handlebars)
+});
+
 
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
