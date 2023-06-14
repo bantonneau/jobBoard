@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "title": "Junior Full Stack Developer",
         "company": "Microsoft",
         "experience": "Beginner",
@@ -13,9 +12,7 @@
         "responsibilities": "Collaborate with the development team to design, develop, and maintain web applications using modern technologies and best practices.<br>Participate in the entire software development lifecycle, including requirements gathering, coding, testing, and deployment.<br>Build responsive and intuitive user interfaces using HTML, CSS, and JavaScript frameworks.<br>Develop server-side applications and APIs using languages such as Python, Java, or Node.js.<br>Integrate data from various sources and databases, ensuring data consistency and integrity.<br>Debug and fix software defects to ensure high-quality, bug-free applications.<br>Collaborate with cross-functional teams, including designers and project managers, to deliver innovative and efficient solutions.<br>Stay up-to-date with emerging technologies and industry trends, continuously improving your skills and knowledge.",
         "requirements": "Bachelor's degree in Computer Science, Software Engineering, or a related field (or equivalent practical experience).<br>Solid understanding of web development principles, including front-end and back-end technologies.<br>Proficiency in at least one front-end framework (e.g., React, Angular, or Vue.js) and familiarity with HTML, CSS, and JavaScript.<br>Experience with server-side programming languages (e.g., Python, Java, or Node.js) and related frameworks.<br>Familiarity with relational databases and SQL.<br>Basic knowledge of version control systems (e.g., Git) and agile development methodologies.<br>Strong problem-solving and analytical skills, with a keen attention to detail.<br>Good communication and teamwork abilities, with a willingness to learn and adapt in a fast-paced environment."
     }, 
-
     {
-        "id": 2,
         "title": "Senior Data Scientist",
         "company": "Google",
         "experience": "Experienced",
@@ -28,9 +25,7 @@
         "responsibilities": "Develop and implement advanced data analysis models and algorithms to extract insights from complex datasets.<br>Apply statistical techniques and machine learning algorithms to solve business problems and optimize processes.<br>Collaborate with cross-functional teams to understand business requirements and design analytical solutions.<br>Clean, transform, and analyze large datasets to uncover patterns, trends, and correlations.<br>Visualize and communicate findings to stakeholders using data visualization tools and techniques.<br>Provide guidance and mentorship to junior data scientists and analysts.<br>Stay up-to-date with the latest advancements in data science, machine learning, and artificial intelligence.",
         "requirements": "Master's or Ph.D. degree in a quantitative field such as Computer Science, Statistics, or Mathematics.<br>Proven experience as a Data Scientist, with a strong track record of developing and implementing data-driven solutions.<br>In-depth knowledge of statistical analysis, machine learning algorithms, and data mining techniques.<br>Proficiency in programming languages such as Python or R, along with data manipulation and analysis libraries.<br>Experience with big data technologies and frameworks such as Hadoop, Spark, or TensorFlow.<br>Strong problem-solving and analytical skills, with the ability to work on complex business problems and deliver actionable insights.<br>Excellent communication and presentation skills, with the ability to explain complex concepts to both technical and non-technical stakeholders."
       }, 
-
       {
-        "id": 3,
         "title": "Software Engineer",
         "company": "Amazon",
         "experience": "Intermediate",
@@ -44,7 +39,6 @@
         "requirements": "Bachelor's or Master's degree in Computer Science or a related field.<br>Solid understanding of software development principles, data structures, and algorithms.<br>Proficiency in at least one programming language such as Java, C++, or Python.<br>Experience with web development frameworks, databases, and version control systems.<br>Strong problem-solving skills and attention to detail.<br>Excellent communication and collaboration abilities, with a strong desire to learn and grow."
       }, 
       {
-        "id": 4,
         "title": "UX Designer",
         "company": "Apple",
         "experience": "Experienced",
@@ -58,7 +52,6 @@
         "requirements": "Bachelor's or Master's degree in Design, Human-Computer Interaction, or a related field.<br>Proven experience as a UX Designer, with a strong portfolio showcasing user-centered design solutions.<br>Proficiency in design tools such as Sketch, Adobe XD, or Figma.<br>Strong understanding of user research methodologies and usability principles.<br>Excellent visual design skills and attention to detail.<br>Good communication and collaboration abilities, with the ability to present and justify design decisions to stakeholders."
       }, 
       {
-        "id": 5,
         "title": "Marketing Manager",
         "company": "Facebook",
         "experience": "Experienced",

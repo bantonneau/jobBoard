@@ -11,13 +11,13 @@ Job.init(
         primaryKey: true,
         autoIncrement: true,
       },
-      company: {
+      title: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      title: {
+      company: {
         type: DataTypes.STRING,
-        allowNull: true,
+        allowNull: false,
       },
       experience: {
         type: DataTypes.STRING,
@@ -27,7 +27,7 @@ Job.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
-      salary: {
+      location: {
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -41,20 +41,21 @@ Job.init(
         type: DataTypes.BOOLEAN,
       },
       description: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
       },
       responsibilities: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
       },
       requirements: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
       },
     },
     {
       sequelize,
+      timestamps: false,
       freezeTableName: true,
       underscored: true,
       modelName: 'job',

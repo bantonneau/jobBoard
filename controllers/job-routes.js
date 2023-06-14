@@ -3,10 +3,11 @@ const Job = require("../models/Job");
 
 router.get("/", async function (req, res) {
     const jobsArray = await Job.findAll();
+    console.log('Jobs retrieved:', jobsArray);
     return res.render("dashboard", {
-         jobsArray
-    })
-})
+         jobs: jobsArray
+    });
+});
 
 router.get("/jobs/:id", async function (req, res) {
     const jobId = req.params.id; 

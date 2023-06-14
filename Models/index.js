@@ -1,18 +1,18 @@
-const Sequelize = require('sequelize');
-const config = require('../config/connection'); // make sure this path leads to your database config file
+// index.js
+const User = require('./User');
+const Job = require('./Job');
+const UserJob = require('./UserJob');
 
-const sequelize = new Sequelize(config.database, config.username, config.password, config);
+User.belongsToMany(Job, {
+  through: UserJob,
+  foreignKey: 'userId',
+  otherKey: 'jobId'
+});
 
-const Job = require('./Job')(sequelize, Sequelize.DataTypes);
-const User = require('./User')(sequelize, Sequelize.DataTypes);
+Job.belongsToMany(User, {
+  through: UserJob,
+  foreignKey: 'jobId',
+  otherKey: 'userId'
+});
 
-// If your models have any relationships, set them up here.
-// For example, if a User has many Jobs, you might write:
-// User.hasMany(Job);
-
-module.exports = {
-    sequelize,
-    Sequelize,
-    Job,
-    User
-};
+module.exports = { User, Job, UserJob };
