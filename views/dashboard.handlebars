@@ -5,7 +5,8 @@
       <button id="search-button">Search</button>
     </div>
     <div id="job-listings">
-        {{#each jobsArray as |job|}}
+      {{log jobs}}
+        {{#each jobs as |job|}}
             <div class="job-item">
                 <h3><a href="/jobs/{{job.id}}">{{job.title}}</a></h3>
                 <p>{{job.company}} - {{#if job.remote}} Remote {{/if}}  {{#if job.hybrid}} Hybrid {{/if}} {{#if job.onSite}} On Site {{/if}}</p>
