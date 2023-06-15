@@ -5,17 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Mode - Job Listing Website</title>
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
 <body>
   <header>
-    <h1>Job Mode LLC</h1>
-    <div class="header-buttons">
-      {{#if userAuth}} <a href="/profile" class="profile-link">My Profile</a> <button class="login-button">Log Out</button> {{/if}}
-      {{#unless userAuth}} <button class="login-button">Login</button> {{/unless}}
-    </div>
+      <h1>
+        <a href="/">JOB MODE</a>
+      </h1>
+      <nav>
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
   </header>
   {{{body}}}
   <footer>
