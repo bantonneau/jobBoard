@@ -1,17 +1,17 @@
+<main>
+  <div id="job-listings">
+    {{log jobs}}
+    {{#each jobs as |job|}}
+    <div class="job-item">
+      <div class="job-info">
+        <h3><a href="/jobs/{{job.id}}">{{job.title}}</a></h3>
+        <p>{{job.company}} - {{#if job.remote}} Remote {{/if}} {{#if job.hybrid}} Hybrid {{/if}} {{#if job.onSite}} On
+          Site {{/if}}</p>
+      </div>
+      <div class="job-savebutton">
 
-  <main>
-    <div class="search-container">
-      <input type="text" id="search-input" placeholder="Search for job listings">
-      <button id="search-button">Search</button>
+      </div>
     </div>
-    <div id="job-listings">
-      {{log jobs}}
-        {{#each jobs as |job|}}
-            <div class="job-item">
-                <h3><a href="/jobs/{{job.id}}">{{job.title}}</a></h3>
-                <p>{{job.company}} - {{#if job.remote}} Remote {{/if}}  {{#if job.hybrid}} Hybrid {{/if}} {{#if job.onSite}} On Site {{/if}}</p>
-            </div>
-        {{/each}}
-    </div>
-  </main>
-  
+    {{/each}}
+  </div>
+</main>

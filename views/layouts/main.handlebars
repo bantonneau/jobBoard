@@ -11,18 +11,19 @@
 
 <body>
   <header>
-      <h1>
-        <a href="/">JOB MODE</a>
-      </h1>
+    <div class="header-content">
+      <a class="logo" href="/">
+        <h3>JOB <span>MODE</span></h3>
+      </a>
       <nav>
-        <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a class="profile-link" href="/profile">profile</a>
+        <a class="logout-button" id="logout">logout</a>
         {{else}}
-        <a href="/login">login</a>
+        <a class="login-button" href="/login">login</a>
         {{/if}}
       </nav>
+    </div>
   </header>
   {{{body}}}
   <footer>
@@ -31,3 +32,5 @@
 </body>
 
 </html>
+
+<script src="./js/logout.js"></script>
