@@ -1,5 +1,53 @@
 <main>
-  <div id="job-listings">
+  <div class="filter-container">
+    <div class="dropdown">
+      <div class="dropdown-trigger">
+        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+          <span>Location</span>
+          <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            Remote
+          </a>
+          <a class="dropdown-item">
+            Hybrid
+          </a>
+          <a class="dropdown-item">
+            On-Site
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="dropdown-trigger">
+        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+          <span>Experience</span>
+          <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">
+            Beginner
+          </a>
+          <a class="dropdown-item">
+            Intermediate
+          </a>
+          <a class="dropdown-item">
+            Experienced
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="job-listings">
     {{log jobs}}
     {{#each jobs as |job|}}
     <div class="job-item">
@@ -14,4 +62,34 @@
     </div>
     {{/each}}
   </div>
+  </div>
 </main>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    var dropdowns = document.querySelectorAll('.dropdown:not(.is-hoverable)');
+
+    if (dropdowns.length > 0) {
+      dropdowns.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+          e.stopPropagation();
+          if (e.target.matches('.dropdown-item')) {
+            el.querySelector('.button span').textContent = e.target.textContent;
+          }
+          el.classList.toggle('is-active');
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        closeDropdowns();
+      });
+    }
+
+    function closeDropdowns() {
+      dropdowns.forEach(function (el) {
+        el.classList.remove('is-active');
+      });
+    }
+
+  });
+</script>

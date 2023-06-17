@@ -1,2 +1,19 @@
-<h1>PROFILE</h1>
-<p>lets go</p>
+<div class="profile-savedjobs-container">
+    <h3>Saved jobs:</h3>
+    <div class="profile-job-listings">
+        {{log savedJobs}}
+        {{#each savedJobs as |job|}}
+        <div class="job-item">
+            <div class="job-info">
+                <h3><a href="/jobs/{{job.id}}">{{job.title}}</a></h3>
+                <p>{{job.company}} - {{#if job.remote}} Remote {{/if}} {{#if job.hybrid}} Hybrid {{/if}} {{#if
+                    job.onSite}} On
+                    Site {{/if}}</p>
+            </div>
+            <div class="job-savebutton">
+
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

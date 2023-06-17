@@ -47,5 +47,40 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+router.get('/profile', withAuth, async (req, res) => {
+    try {
+        console.log("Session User ID:", req.session.user_id);
+
+        // Find the logged in user based on the session ID
+        const userData = await User.findByPk(req.session.user_id, {
+            include: [{ model: Job }],
+        });
+
+        console.log("User Data:", userData);
+
+        if (!userData) {
+            res.status(404).json({ message: 'No user found with this id' });
+            return;
+        }
+
+        const user = userData.get({ plain: true });
+        console.log("User Object:", user);
+
+        const savedJobs = user.jobs || [];  // Use lowercase 'j' in 'jobs'
+        console.log("Saved Jobs:", savedJobs);
+
+        res.render('profile', {
+            savedJobs,
+            logged_in: true
+        });
+
+    } catch (err) {
+        console.error(err);  // Log the error to the console
+        res.status(500).json(err);
+    }
+});
+
+
+
 module.exports = router;
 

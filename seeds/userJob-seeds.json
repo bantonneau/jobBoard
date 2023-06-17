@@ -2,6 +2,10 @@
     {
         "userId": 1,
         "jobId": 1
+    },
+    {
+        "userId": 2,
+        "jobId": 1
     }
 ]
   
