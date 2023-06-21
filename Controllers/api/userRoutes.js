@@ -58,4 +58,69 @@ router.post('/logout', (req, res) => {
   }
 });
 
+router.post("/search", async (req, res) => {
+    try {
+        const { location, experience, minSalary } = req.body;
+
+        let locationCriteria = {};
+        if (location === 'Remote') {
+            locationCriteria = { remote: true };
+        } else if (location === 'Hybrid') {
+            locationCriteria = { hybrid: true };
+        } else if (location === 'On-Site') {
+            locationCriteria = { onSite: true };
+        }
+
+        const jobsArray = await Job.findAll({
+            where: {
+                experience: experience,
+                salary: {
+                    [sequelize.Op.gte]: minSalary
+                },
+                ...locationCriteria
+            }
+        });
+
+        if (req.session.logged_in) {
+            res.json({
+                logged_in: true,
+                jobs: jobsArray
+            });
+        } else {
+            res.json({
+                jobs: jobsArray
+            });
+        }
+
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+const { UserJob } = require('../../models');
+
+router.post('/save', async (req, res) => {
+    try {
+        // Make sure the user is logged in
+        if (!req.session.user_id) {
+            res.status(401).json({ message: 'Please log in' });
+            return;
+        }
+
+        // Create a new UserJob instance with the user ID and job ID
+        const userJob = await UserJob.create({
+            userId: req.session.user_id,
+            jobId: req.body.jobId,
+        });
+
+        res.json(userJob);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json(err);
+    }
+});
+
+
 module.exports = router;
+
+

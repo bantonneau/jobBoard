@@ -25,10 +25,15 @@ router.get("/", async (req, res) => {
 
 router.get("/jobs/:id", async function (req, res) {
     const jobId = req.params.id;
-    const job = await Job.findByPk(jobId);
-    if (!job) {
+    const jobInstance = await Job.findByPk(jobId);
+    if (!jobInstance) {
         return res.status(404).send("Job not found");
     }
+
+    const job = jobInstance.get({ plain: true });
+
+    job.responsibilities = JSON.parse(job.responsibilities);
+    job.requirements = JSON.parse(job.requirements);
 
     return res.render("job", {
         job,
@@ -79,7 +84,6 @@ router.get('/profile', withAuth, async (req, res) => {
         res.status(500).json(err);
     }
 });
-
 
 
 module.exports = router;
