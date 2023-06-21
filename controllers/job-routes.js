@@ -1,5 +1,5 @@
 const router = require("express").Router()
-const { Job, User } = require("../modelss");
+const { Job, User } = require("../models");
 const withAuth = require('../utils/auth');
 
 
