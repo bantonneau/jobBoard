@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User } = require('../../modelss');
 
 router.post('/', async (req, res) => {
   try {
@@ -97,7 +97,7 @@ router.post("/search", async (req, res) => {
     }
 });
 
-const { UserJob } = require('../../models');
+const { UserJob } = require('../../modelss');
 
 router.post('/save', async (req, res) => {
     try {
