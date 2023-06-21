@@ -1,11 +1,26 @@
-<main> 
-    <h1>{{job.title}}</h1>
-    <h2>{{job.company}}</h2>
-    <p>Experience: {{job.experience}} - Salary: {{job.salary}} - Location: {{#if job.remote}} Remote {{/if}}  {{#if job.hybrid}} Hybrid {{/if}} {{#if job.onSite}} On Site {{/if}} </p>
-    <h3>Job Description:</h3>
-    <p>{{job.description}}</p>
-    <h3>Job responsibilities</h3>
-    <p>{{job.responsibilities}}</p>
-    <h3>Job Requirements</h3>
-    <p>{{job.requirements}}</p>
-</main>
+<h1 class="is-size-3">{{job.title}}</h1>
+<h2 class="is-size-4">{{job.company}}</h2>
+<p>Experience: {{job.experience}} - Salary: {{job.salary}} - Location: {{#if job.remote}} Remote {{/if}} {{#if job.hybrid}} Hybrid {{/if}} {{#if job.onSite}} On Site {{/if}} </p>
+<br>
+<h3 class="is-size-5">Job Description:</h3>
+<p>{{job.description}}</p>
+<br>
+<h3 class="is-size-5">Job responsibilities:</h3>
+<ul>
+{{#each job.responsibilities}}
+    <li><p>&#8226; {{this}}</p></li>
+{{/each}}
+</ul>
+<br>
+<h3 class="is-size-5">Job Requirements:</h3>
+<ul>
+{{#each job.requirements}}
+    <li><p>&#8226; {{this}}</p></li>
+{{/each}}
+</ul>
+
+{{log job.requirements}}
+{{log job.responsibilities}}
+
+
+<button id="applyJobButton" class="button is-link save-job">Apply</button>
