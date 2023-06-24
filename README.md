@@ -19,6 +19,7 @@ The application includes user authentication (express-session and cookies) and f
 1. Clone the repository or download the project files.
 2. Open a terminal or command prompt and navigate to the project directory.
 3. Install the project dependencies by running the following command: `npm install`
+4. Seed the database by running the following command: `npm run seed`
 
 ## Usage
 <img width="906" alt="image" src="https://github.com/bantonneau/jobBoard/assets/109747300/571c1ef3-b26c-4da3-80f7-40c7fa74706c">
