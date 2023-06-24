@@ -62,9 +62,7 @@ This project was developed by Ben Antonneau and Blaine Duran. Special thanks to 
 * [Handlebars.js](https://handlebarsjs.com/): A popular templating engine.
 * [Sequelize](https://sequelize.org/): A promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server.
 * [Bulma](https://bulma.io/): A free, open-source CSS framework based on Flexbox.
-* [JawsDB](https://www.jawsdb.com/): An add-on for providing a fully functional MySQL Database server for use with your
-
- Heroku application.
+* [JawsDB](https://www.jawsdb.com/): An add-on for providing a fully functional MySQL Database server for use with your Heroku application.
 * [Heroku](https://www.heroku.com/): A platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
 ## License
