@@ -1,4 +1,4 @@
-<div class="filter-container">
+{{!-- <div class="filter-container">
   <div class="dropdown">
     <div class="dropdown-trigger">
       <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -45,11 +45,11 @@
       </div>
     </div>
   </div>
-  <input class="input" type="number" id="numericalInput" placeholder="Min Salary">
+  <input class="input" type="number" id="numericalInput" placeholder="Min Salary"> --}}
 
 
-  <button class="button" id="search">Search</button>
-</div>
+  {{!-- <button class="button" id="search">Search</button>
+</div> --}}
 <div class="job-listings">
   {{#each jobs as |job|}}
   <div class="job-item">
@@ -58,9 +58,11 @@
       <p>{{job.company}} - {{#if job.remote}} Remote {{/if}} {{#if job.hybrid}} Hybrid {{/if}} {{#if job.onSite}} On
         Site {{/if}}</p>
     </div>
+    {{#if ../logged_in}}
     <div class="job-savebutton">
       <button id="saveJobButton" class="button is-link save-job" data-job-id="{{job.id}}">Save Job</button>
     </div>
+    {{/if}}
   </div>
   {{/each}}
 </div>
@@ -96,6 +98,6 @@
   });
 </script>
 
-<script src="./js/search.js"></script>
+{{!-- <script src="./js/search.js"></script> --}}
 
 <script src="./js/save.js"></script>
