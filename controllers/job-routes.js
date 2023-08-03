@@ -88,6 +88,10 @@ router.get('/profile', withAuth, async (req, res) => {
     }
 });
 
+router.get('/apply', function(req, res) {
+    res.render('apply');
+});
+
 
 module.exports = router;
 

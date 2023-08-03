@@ -140,5 +140,159 @@
       "Analytical mindset and proficiency in data analysis and reporting tools.",
       "Ability to work effectively in cross-functional teams and manage multiple projects simultaneously."
     ]
+  },
+  {
+    "title": "Project Manager",
+    "company": "Adobe",
+    "experience": "Experienced",
+    "salary": "$90,000-$120,000",
+    "location": "San Francisco, CA",
+    "remote": false,
+    "hybrid": true,
+    "onSite": false,
+    "description": "Adobe is seeking an experienced Project Manager to join our team. As a Project Manager, you will be responsible for planning, executing, and evaluating projects according to predetermined timelines and budgets. You will work with internal and external stakeholders to ensure project success.",
+    "responsibilities": [
+      "Planning and implementing project schedules.",
+      "Coordinating with cross-functional teams to ensure project success.",
+      "Maintaining project budgets and timelines.",
+      "Managing project risks and issues.",
+      "Providing regular project updates to stakeholders.",
+      "Ensuring project deliverables meet quality standards."
+    ],
+    "requirements": [
+      "Bachelor's degree in business or related field.",
+      "Proven experience in project management.",
+      "Strong understanding of project management principles and practices.",
+      "Excellent communication and leadership skills.",
+      "Ability to manage multiple projects simultaneously.",
+      "Proficiency in project management software tools."
+    ]
+  },
+  {
+    "title": "Business Analyst",
+    "company": "IBM",
+    "experience": "Intermediate",
+    "salary": "$70,000-$90,000",
+    "location": "New York, NY",
+    "remote": true,
+    "hybrid": false,
+    "onSite": false,
+    "description": "IBM is seeking a Business Analyst to join our team. As a Business Analyst, you will be responsible for assessing company business processes and identifying opportunities for improvement. You will work with stakeholders to understand their business needs and deliver solutions that meet their requirements.",
+    "responsibilities": [
+      "Analyzing business processes and identifying areas for improvement.",
+      "Creating detailed business analysis, outlining problems, opportunities, and solutions.",
+      "Communicating insights and plans to cross-functional team members and management.",
+      "Gathering critical information from meetings with various stakeholders and producing useful reports.",
+      "Ensuring solutions meet business needs and requirements."
+    ],
+    "requirements": [
+      "Bachelor's degree in business or related field.",
+      "Proven experience in business analysis or a related field.",
+      "Exceptional analytical and conceptual thinking skills.",
+      "Excellent communication skills.",
+      "Ability to work closely with other team members to ensure the project's success.",
+      "Proficiency in Microsoft Office and business analysis tools."
+    ]
+  },
+  {
+    "title": "Product Manager",
+    "company": "LinkedIn",
+    "experience": "Experienced",
+    "salary": "$110,000-$140,000",
+    "location": "Sunnyvale, CA",
+    "remote": false,
+    "hybrid": false,
+    "onSite": true,
+    "description": "LinkedIn is looking for an experienced Product Manager to join our team. As a Product Manager, you will be responsible for developing product strategies and managing product development to deliver high-quality products to our customers. You will work closely with different teams, including engineering, design, and marketing, to ensure product success.",
+    "responsibilities": [
+      "Determining product strategy and roadmap.",
+      "Collaborating with cross-functional teams to ensure product success.",
+      "Overseeing product development and ensuring high-quality standards.",
+      "Conducting market research to identify customer needs and opportunities.",
+      "Monitoring product performance and making necessary improvements."
+    ],
+    "requirements": [
+      "Bachelor's degree in business or related field.",
+      "Proven experience in product management.",
+      "Excellent problem-solving, organizational, and leadership skills.",
+      "Strong understanding of product development and management principles.",
+      "Excellent communication skills.",
+      "Ability to work closely with cross-functional teams to ensure product success."
+    ]
+  },
+  {
+    "title": "Data Scientist",
+    "company": "Microsoft",
+    "experience": "Intermediate",
+    "salary": "$80,000-$110,000",
+    "location": "Redmond, WA",
+    "remote": false,
+    "hybrid": true,
+    "onSite": false,
+    "description": "Microsoft is looking for a skilled Data Scientist to join our team. As a Data Scientist, you'll leverage your deep understanding of statistical and predictive modeling concepts as well as machine learning algorithms to translate complex data sets into useful business insights.",
+    "responsibilities": [
+      "Conduct complex data analysis to extract insights and identify patterns.",
+      "Design, develop and implement machine learning models.",
+      "Communicate findings to stakeholders to aid strategic decisions.",
+      "Ensure data quality and integrity in data used for analysis.",
+      "Keep abreast of developments in the field of data science."
+    ],
+    "requirements": [
+      "Master's degree in Statistics, Mathematics, Computer Science or another quantitative field.",
+      "Experience in data mining and statistical analysis.",
+      "Excellent coding skills in Python or R.",
+      "Strong knowledge of machine learning algorithms and their real-world advantages/drawbacks.",
+      "Strong analytical and problem-solving skills."
+    ]
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Facebook",
+    "experience": "Experienced",
+    "salary": "$100,000-$130,000",
+    "location": "Menlo Park, CA",
+    "remote": false,
+    "hybrid": false,
+    "onSite": true,
+    "description": "Facebook is seeking a Software Engineer to join our engineering team. The ideal candidate will be responsible for developing high-quality applications. They will also be responsible for designing and implementing testable and scalable code.",
+    "responsibilities": [
+      "Develop high-quality software design and architecture.",
+      "Identify, prioritize and execute tasks in the software development life cycle.",
+      "Develop tools and applications by producing clean, efficient code.",
+      "Automate tasks through appropriate tools and scripting.",
+      "Perform validation and verification testing."
+    ],
+    "requirements": [
+      "Bachelor's degree in Computer Science or related field.",
+      "Proven experience as a Software Engineer or similar role.",
+      "Experience with software design and development in a test-driven environment.",
+      "Knowledge of coding languages (e.g. C++, Java, JavaScript) and frameworks/systems (e.g. AngularJS, Git).",
+      "Ability to work independently and multi-task effectively."
+    ]
+  },
+  {
+    "title": "UX Designer",
+    "company": "Apple",
+    "experience": "Entry Level",
+    "salary": "$70,000-$90,000",
+    "location": "Cupertino, CA",
+    "remote": true,
+    "hybrid": false,
+    "onSite": false,
+    "description": "Apple is looking for a user-experience (UX) designer able to understand our business requirements and any technical limitations, as well as be responsible for conceiving and conducting user research, interviews and surveys, and translating them into sitemaps, user flows, customer journey maps, wireframes, mockups and prototypes.",
+    "responsibilities": [
+      "Translate concepts into user flows, wireframes, mockups and prototypes that lead to intuitive user experiences.",
+      "Design and deliver wireframes, user stories, user journeys, and mockups optimized for a wide range of devices and interfaces.",
+      "Identify design problems and devise elegant solutions.",
+      "Make strategic design and user-experience decisions related to core, and new, functions and features.",
+      "Collaborate with other team members and stakeholders."
+    ],
+    "requirements": [
+      "Bachelor's degree in Design, Computer Science or related field.",
+      "Experience in using UX design best practices to design solutions, and a deep understanding of mobile-first and responsive design.",
+      "A solid grasp of user-centered design (UCD), planning and conducting user research, user testing, A/B testing, rapid prototyping, heuristic analysis, usability and accessibility concerns.",
+      "Ability to iterate designs and solutions efficiently and intelligently.",
+      "Ability to clearly and effectively communicate design processes, ideas, and solutions to teams and clients."
+    ]
   }
 ]
