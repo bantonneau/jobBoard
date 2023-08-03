@@ -5,6 +5,8 @@ const withAuth = require('../utils/auth');
 
 router.get("/", async (req, res) => {
     try {
+        console.log("Session: ", req.session);  // log session
+
         const jobsArray = await Job.findAll();
         console.log(req.session.logged_in);
         if (req.session.logged_in) {
@@ -14,6 +16,7 @@ router.get("/", async (req, res) => {
             });
         } else {
             res.render("dashboard", {
+                logged_in: false,
                 jobs: jobsArray
             });
         }
@@ -83,6 +86,10 @@ router.get('/profile', withAuth, async (req, res) => {
         console.error(err);  // Log the error to the console
         res.status(500).json(err);
     }
+});
+
+router.get('/apply', function(req, res) {
+    res.render('apply');
 });
 
 
