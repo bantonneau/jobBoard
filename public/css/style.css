@@ -334,3 +334,22 @@ border-radius: 5px;
   padding: 20px;
   flex-direction: column;
 }
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin: 0;
+  }
+
+  .job-item {
+    width: 100%;
+  }
+
+  .header-content{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  nav {
+    padding-right: 16px;
+  }
+}
