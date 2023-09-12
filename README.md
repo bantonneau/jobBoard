@@ -47,8 +47,6 @@ The Job Board App consists of the following main files and folders:
 ## Features
 The Job Board App allows you to browse job listings, sign up, and log in to save jobs for later. All user authentication is fully encrypted. The app uses Bulma for the front-end framework.
 
-There is a feature currently in development to filter jobs by experience, remote vs. in-person, and salary.
-
 ## Questions
 If you have any questions or issues, feel free to reach out via:
 
